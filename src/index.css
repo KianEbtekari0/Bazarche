@@ -23,6 +23,14 @@ body {
 
 /* Navbar */
 
+body {
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -38,6 +46,7 @@ header {
 a, button {
   color: #333;
   font-size: 23px;
+  text-decoration: none;
 }
 
 .logo {
@@ -64,11 +73,49 @@ button {
   font-family: font;
 }
 
+.nav_links li::before {
+  content: '';
+  display: flex;
+  position: relative;
+  background-color: #457BFF;
+  color: #457BFF;
+  height: 4px;
+  width: 0%;
+  top: 40px;
+  transition: 0.5s;
+}
+
+.nav_links li:hover::before {
+  content: '';
+  display: flex;
+  position: relative;
+  background-color: #457BFF;
+  color: #457BFF;
+  height: 4px;
+  width: 100%;
+  top: 40px;
+}
+
+button {
+  padding: 15px 35px;
+  background-color: #457BFF;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+  color: #f4f4f4;
+  font-family: font;
+}
+
+button:hover {
+  box-shadow: 0px 0px 5px 5px #bbceff;
+}
+
 .illustration {
   width: 900px;
   height: 900px;
   margin-left: 50px;
-  margin-top: -70px;
+  margin-top: -60px;
 }
 
 .welcome-text-1 {
@@ -91,7 +138,7 @@ button {
 section {
   margin-top: 10px;
   background: rgb(98,165,255);
-  background: linear-gradient(264deg, rgba(98,165,255,1) 0%, rgba(97,157,207,1) 13%, rgba(86,134,189,1) 31%, rgba(67,135,194,1) 49%, rgba(48,121,188,1) 59%, rgba(12,108,179,1) 75%, rgba(19,87,164,1) 90%);
+  background: linear-gradient(264deg, rgba(98,165,255,1) 0%, rgba(97,157,207,1) 13%, 	rgba(86,134,189,1) 31%, rgba(67,135,194,1) 49%, rgba(48,121,188,1) 59%, rgba(12,108,179,1) 75%, rgba(19,87,164,1) 90%);
   color: #f4f4f4;
   padding: 150px;
 }
@@ -537,6 +584,29 @@ hr {
   }
 }
 
+@media(max-width: 989px) {
+button {
+  display: none;
+}
+}
+
+@media(max-width: 760px) {
+.logo {
+  display: none;
+}
+
+header {
+  text-align: center;
+  justify-content: center;
+}
+}
+
+@media(max-width: 778px) {
+.container-3 {
+  height: 1150px;
+}
+}
+
 /* Respanive cards and welcome*/
 
 @media(max-width: 780px) {
@@ -551,17 +621,33 @@ hr {
   }
 }
 
-@media(max-width: 760px) {
-  .logo {
+@media(max-width: 1032px) {
+  .welcome h4 {
     display: none;
   }
 
-  header {
-    text-align: center;
-    justify-content: center;
+  .welcome h1 {
+    font-size: 45px;
+  }
+
+  .illustration {
+    width: 700px;
+    height: 700px;
   }
 }
 
-@media(max-width: 1246px) {
+@media(max-width: 761px) {
+  .welcome h1 {
+    display: flex;
+    position: relative;
+    left: 80px;
+    font-size: 40px;
+  }
 
+  .illustration {
+    position: relative;
+    right: 30px;
+    width: 500px;
+    height: 500px;
+  }
 }
