@@ -6,6 +6,7 @@ class Cards extends Component {
     render() { 
         return (
             <body>
+                <div className='card'>
                 <div className="wrapper">
                     <div className="card1">
                         <div className="content">
@@ -74,6 +75,7 @@ class Cards extends Component {
                             <a href="" className='button'>Read more</a>
                         </div>
                     </div>
+                </div>
                 </div>
             </body>
         );
