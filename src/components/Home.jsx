@@ -23,7 +23,7 @@ class Home extends Component {
                         <h1>چگونه محصولات خود را بارگذاری کنیم؟</h1>
                         <h4>شما می توانید با زدن بر روی برنامه سروش در پایین این نوشته به پیوی من در سروش بروید و به من پیام دهید تا من محصولات شما را در سایت در بخش محصولات قرار دهم</h4>
                         <div className="icon-sourosh">
-                            <a href="#"><img src={sourosh} alt="icon" className='icon' /></a>
+                            <a href="https://splus.ir/joinchannel/Dd6APY4o09CziZJe71EIRpkc"><img src={sourosh} alt="icon" className='icon' /></a>
                         </div>
                     </div>
                 </section>
