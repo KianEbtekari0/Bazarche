@@ -183,21 +183,22 @@ section {
   color: #333;
 }
 
-.container-3 {
+.wrapper {
   font-family: font;
   background-color: #f4f4f4;
-  width: 100%;
-  max-width: 100%;
-  height: 720px;
-  position: relative;
-  display: flex;
+  top: 100px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   z-index: 1;
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 30px;
 }
 
-.container-3 .card1 {
+.card1 {
   position: relative;
   display: flex;
   width: 320px;
@@ -207,176 +208,217 @@ section {
   height: 450px;
   margin: 30px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  background-image: url('./components/image/logo.png');
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 15px;
   overflow: hidden;
   justify-content: center;
   align-items: center;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background-image: url("./components/image/sourosh.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.container-3 .card1 .content {
-  padding: 25px;
+.card2 {
+  position: relative;
+  display: flex;
+  width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);                                                                                                                                                width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background-image: url("./components/image/sourosh.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card3 {
+  position: relative;
+  display: flex;
+  width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);                                                                                                                                                width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background-image: url("./components/image/sourosh.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card4 {
+  position: relative;
+  display: flex;
+  width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);                                                                                                                                                width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background-image: url("./components/image/sourosh.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card5 {
+  position: relative;
+  display: flex;
+  width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);                                                                                                                                                width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background-image: url("./components/image/sourosh.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card6 {
+  position: relative;
+  display: flex;
+  width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);                                                                                                                                                width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background-image: url("./components/image/sourosh.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card7 {
+  position: relative;
+  display: flex;
+  width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);                                                                                                                                                width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background-image: url("./components/image/sourosh.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card8 {
+  position: relative;
+  display: flex;
+  width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);                                                                                                                                                width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background-image: url("./components/image/sourosh.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card9 {
+  position: relative;
+  display: flex;
+  width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);                                                                                                                                                width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background-image: url("./components/image/sourosh.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper .content {
+  padding: 45px;
   transform: translateY(100px);
   opacity: 0;
   text-align: center;
   transition: 0.5s;
 }
 
-.container-3 .card1:hover .content {
+.wrapper .content:hover {
   backdrop-filter: blur(8px);
   transform: translateY(0);
   opacity: 1;
 }
 
-.container-3 .card1 .content h3 {
+.content {
+ padding: 15px 10px;
+ text-align: center; 
+}
+
+.content h2 {
   font-size: 1.8em;
   margin-top: 20px;
   z-index: 1;
   color: #333;
 }
 
-.container-3 .card1 .content p {
+.content p {
   margin-top: -10px;
   font-size: 1em;
   color: #333;
   font-weight: bold;
 }
 
-.container-3 .card1 .content a {
+.content a {
   position: relative;
   display: inline-block;
   font-size: 20px;
   padding: 10px 40px;
-  background: #fff;
-  color: #333;
-  border-radius: 20px;
   text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.container-3 .card2 {
-  position: relative;
-  display: flex;
-  width: 320px;
-  height: 450px;
-  margin: 30px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);                                                                                                                                                width: 320px;
-  height: 450px;
-  margin: 30px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  background-image: url('./components/image/store.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 15px;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.container-3 .card2 .content {
-  padding: 25px;
-  transform: translateY(100px);
-  opacity: 0;
-  text-align: center;
-  transition: 0.5s;
-}
-
-.container-3 .card2:hover .content {
-  backdrop-filter: blur(8px);
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.container-3 .card2 .content h3 {
-  font-size: 1.8em;
-  margin-top: 20px;
-  z-index: 1;
-  color: #333;
-}
-
-.container-3 .card2 .content p {
-  margin-top: -10px;
-  font-size: 1em;
-  color: #333;
-  font-weight: bold;
-}
-
-.container-3 .card2 .content a {
-  position: relative;
-  display: inline-block;
-  font-size: 20px;
-  padding: 10px 40px;
-  background: #fff;
-  color: #333;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.container-3 .card3 {
-  position: relative;
-  display: flex;
-  width: 320px;
-  height: 450px;
-  margin: 30px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);                                                                                                                                                width: 320px;
-  height: 450px;
-  margin: 30px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  background-image: url('./components/image/dots.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 15px;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.container-3 .card3 .content {
-  padding: 25px;
-  transform: translateY(100px);
-  opacity: 0;
-  text-align: center;
-  transition: 0.5s;
-}
-
-.container-3 .card3:hover .content {
-  backdrop-filter: blur(8px);
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.container-3 .card3 .content h3 {
-  font-size: 1.8em;
-  margin-top: 20px;
-  z-index: 1;
-  color: #333;
-}
-
-.container-3 .card3 .content p {
-  margin-top: -10px;
-  font-size: 1em;
-  color: #333;
-  font-weight: bold;
-}
-
-.container-3 .card3 .content a {
-  position: relative;
-  display: inline-block;
-  font-size: 20px;
-  padding: 10px 40px;
   background: #fff;
   color: #333;
   border-radius: 20px;
@@ -600,19 +642,6 @@ header {
 }
 
 /* Respanive cards and welcome*/
-
-@media(max-width: 780px) {
-  .container-3 {
-    height: 1500px;
-    margin-bottom: 80px;
-}
-}
-
-@media(max-width: 1140px) {
-  .container-3 {
-    height: 1500px;
-}
-}
 
 @media(max-width: 989px) {
   button {
