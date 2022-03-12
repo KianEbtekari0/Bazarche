@@ -1,13 +1,567 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@font-face {
+  font-family: font;
+  src: local("AirbnbCerealLight"),
+  url("./components/Lalezar-Fontjo.com/TTF/Lalezar-Regular.ttf") format("truetype");
+  font-weight: bold;  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.welcome {
+  float: right;
+  margin-right: 140px;
+  margin-top: 110px;
+  font-family: font;
+  color: #333;
+}
+
+/* Navbar */
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  font-family: font;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+a, button {
+  color: #333;
+  font-size: 23px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+button {
+  padding: 15px 35px;
+  background-color: #457BFF;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+  color: #f4f4f4;
+  font-family: font;
+}
+
+.illustration {
+  width: 900px;
+  height: 900px;
+  margin-left: 50px;
+  margin-top: -70px;
+}
+
+.welcome-text-1 {
+  display: flex;
+  float: right;
+  font-size: 70px;
+}
+
+.more {
+  margin-top: 30px;
+}
+
+.more h4 {
+  float: right;
+  font-family: font;
+  font-size: 25px;
+  margin-top: -25px;
+}
+
+section {
+  margin-top: 10px;
+  background: rgb(98,165,255);
+  background: linear-gradient(264deg, rgba(98,165,255,1) 0%, rgba(97,157,207,1) 13%, rgba(86,134,189,1) 31%, rgba(67,135,194,1) 49%, rgba(48,121,188,1) 59%, rgba(12,108,179,1) 75%, rgba(19,87,164,1) 90%);
+  color: #f4f4f4;
+  padding: 150px;
+}
+
+.container2 h1 {
+  font-family: font;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: -100px;
+  font-size: 60px;
+}
+
+.container2 h4 {
+  font-family: font;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 29px;
+}
+
+.icon-sourosh {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.container2 img {
+  display: flex;
+  margin-top: 50px;
+  width: 120px;
+  height: 120px;
+}
+
+.trends {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: font;
+  font-size: 60px;
+  margin-top: 60px;
+  color: #333;
+}
+
+.container-3 {
+  font-family: font;
+  background-color: #f4f4f4;
+  width: 100%;
+  top: 100px;
+  max-width: 100%;
+  height: 720px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.container-3 .card1 {
+  position: relative;
+  display: flex;
+  width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);                                                                                                                                                width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background-image: url('./components/image/logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.container-3 .card1 .content {
+  padding: 25px;
+  transform: translateY(100px);
+  opacity: 0;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.container-3 .card1:hover .content {
+  backdrop-filter: blur(8px);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.container-3 .card1 .content h3 {
+  font-size: 1.8em;
+  margin-top: 20px;
+  z-index: 1;
+  color: #333;
+}
+
+.container-3 .card1 .content p {
+  margin-top: -10px;
+  font-size: 1em;
+  color: #333;
+  font-weight: bold;
+}
+
+.container-3 .card1 .content a {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 40px;
+  background: #fff;
+  color: #333;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container-3 .card2 {
+  position: relative;
+  display: flex;
+  width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);                                                                                                                                                width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background-image: url('./components/image/store.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.container-3 .card2 .content {
+  padding: 25px;
+  transform: translateY(100px);
+  opacity: 0;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.container-3 .card2:hover .content {
+  backdrop-filter: blur(8px);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.container-3 .card2 .content h3 {
+  font-size: 1.8em;
+  margin-top: 20px;
+  z-index: 1;
+  color: #333;
+}
+
+.container-3 .card2 .content p {
+  margin-top: -10px;
+  font-size: 1em;
+  color: #333;
+  font-weight: bold;
+}
+
+.container-3 .card2 .content a {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 40px;
+  background: #fff;
+  color: #333;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container-3 .card3 {
+  position: relative;
+  display: flex;
+  width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);                                                                                                                                                width: 320px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background-image: url('./components/image/dots.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.container-3 .card3 .content {
+  padding: 25px;
+  transform: translateY(100px);
+  opacity: 0;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.container-3 .card3:hover .content {
+  backdrop-filter: blur(8px);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.container-3 .card3 .content h3 {
+  font-size: 1.8em;
+  margin-top: 20px;
+  z-index: 1;
+  color: #333;
+}
+
+.container-3 .card3 .content p {
+  margin-top: -10px;
+  font-size: 1em;
+  color: #333;
+  font-weight: bold;
+}
+
+.container-3 .card3 .content a {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 40px;
+  background: #fff;
+  color: #333;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 400px;
+  padding: 40px 20px;
+  float: inline-end;
+  bottom: none;
+  background-color: #457BFF;
+}
+
+.container-footer {
+  max-width: 1240px;
+  bottom: 0;
+  padding: 30px 40px;
+  margin: auto;
+  font-family: font;
+  font-weight: 400;
+  margin-top: -20px;
+}
+
+.content_footer  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  margin-right: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+/* Logo footer */
+
+.logo-size {
+  width: 70px;
+  height: 70px;
+}
+
+.profil .logo_area {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.profil .logo_area img {
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+/* Text footer */
+
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.copy_right a {
+  color: #ffff;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.copy_right span {
+  color: #ffff;
+  margin-left: 3px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.135rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo_area .logo_name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 1rem;
+  color: #333;
+}
+
+.desc_area {
+  max-width: 320px;
+  margin-bottom: 1.25rem;
+}
+
+.desc_area p {
+  color: #ffff;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+/* social media icon footer */
+
+.social_media a {
+  color: #ffff;
+  margin-left: 90px;
+  font-size: 24px;
+  display: flex;
+}
+
+.social_media {
+  color: #333;
+  transition: all 0.5s;
+}
+
+/* link footer */
+
+.tou a {
+  color: #ffff;
+  margin-left: 1.5rem;
+  font-family: font;
+  font-size: 15px;
+}
+
+.tou {
+  color: black;
+}
+
+.service_area {
+  display: flex;
+  font-family: font;
+  font-size: 20px;
+}
+
+.service_header  {
+  margin-right: 100px;
+  font-family: font;
+  font-weight: 700;
+}
+
+li.service_name {
+  color: #000;
+  font-size: 30px;
+}
+
+.service_header li a {
+  color: #ffff;
+  padding-bottom: 1px;
+  font-weight: 400;
+  font-family: font;
+}
+
+.service_header li {
+  color: black;
+}
+
+.service_header li {
+  margin-bottom: 10px;
+  font-family: font;
+}
+
+hr {
+  height: 1px;
+  margin-top: 40px;
+  border: none;
+  background-color: #ffff;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .content_footer {
+      flex-wrap: wrap;
+      justify-content: left;
+  }
+
+  .service_area {
+      flex-wrap: wrap;
+      justify-content: left;
+  }
+
+  .service_header {
+      margin-left: 0;
+      margin-right: 40px;
+  }
+
+  .social_media {
+      margin-bottom: 1rem;
+  }
+
+  .foooter_bottom {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+}
+
+/* Respanive cards and welcome*/
+
+@media(max-width: 780px) {
+  .container-3 {
+      height: 1500px;
+  }
+}
+
+@media(max-width: 989px) {
+  button {
+    display: none;
+  }
+}
+
+@media(max-width: 760px) {
+  .logo {
+    display: none;
+  }
+
+  header {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 1246px) {
+
 }
