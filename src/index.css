@@ -198,119 +198,6 @@ section {
   grid-gap: 30px;
 }
 
-@media (max-width: 768px) {
-  .wrapper {
-    margin-left: 200px;
-  }
-}
-
-@media (max-width: 425px) {
-  .wrapper {
-    margin: 50px auto;
-  }
-
-  .nav_links li a, button {
-    font-size: 18px;
-  }
-
-  .illustration {
-    display: none;
-  }
-
-  section {
-    margin-top: 500px;
-    padding: 50px;
-  }
-
-  .container2 h1 {
-    margin-top: 10px;
-    font-size: 35px;
-  }
-
-  .container2 h4 {
-    font-size: 21px;
-  }
-
-  .container2 img {
-    width: 95px;
-    height: 95px;
-  }
-
-  .trends {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 375px) {
-  .wrapper {
-    margin: 50px 20px;
-  }
-
-  .nav_links li a, button {
-    font-size: 16px;
-  }
-
-  .illustration {
-    display: none;
-  }
-
-  section {
-    margin-top: 500px;
-    padding: 40px;
-  }
-
-  .container2 h1 {
-    margin-top: 10px;
-    font-size: 25px;
-  }
-
-  .container2 h4 {
-    font-size: 20px;
-  }
-
-  .container2 img {
-    width: 90px;
-    height: 90px;
-  }
-
-  .trends {
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 320px) {
-  .nav_links li a, button {
-    font-size: 12px;
-  }
-
-  .illustration {
-    display: none;
-  }
-
-  section {
-    margin-top: 500px;
-    padding: 30px;
-  }
-
-  .container2 h1 {
-    margin-top: 10px;
-    font-size: 25px;
-  }
-
-  .container2 h4 {
-    font-size: 20px;
-  }
-
-  .container2 img {
-    width: 90px;
-    height: 90px;
-  }
-
-  .trends {
-    font-size: 25px;
-  }
-}
-
 .card1 {
   position: relative;
   display: flex;
@@ -712,6 +599,13 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
   .content_footer {
       flex-wrap: wrap;
       justify-content: left;
@@ -790,5 +684,177 @@ header {
     right: 30px;
     width: 500px;
     height: 500px;
+  }
+
+  .wrapper {
+    margin-left: 200px;
+  }
+}
+
+@media(max-width: 425px) {
+  .wrapper {
+    margin-left: 45px;
+    font-size: 15px;
+  }
+
+  .wrapper .content a {
+    padding: 10px 30px;
+    font-size: 17px;
+  }
+
+  .wrapper .content {
+    padding: 45px;
+    font-size: 15px;
+  }
+
+  .nav_links li a, button {
+    font-size: 18px;
+  }
+
+  .illustration {
+    width: 450px;
+    height: 450px;
+    position: relative;
+    right: 60px;
+  }
+
+  section {
+    padding: 50px;
+  }
+
+  .container2 h1 {
+    margin-top: 10px;
+    font-size: 35px;
+  }
+
+  .container2 h4 {
+    font-size: 21px;
+  }
+
+  .container2 img {
+    width: 95px;
+    height: 95px;
+  }
+
+  .trends {
+    font-size: 40px;
+  }
+
+  .welcome h1 {
+    font-size: 30px;
+    margin-right: 23px;
+    margin-top: -30px;
+  }
+}
+
+@media(max-width: 375px) {
+  .wrapper {
+    margin-left: 40px;
+  }
+
+  .wrapper .content a {
+    padding: 10px 30px;
+    font-size: 17px;
+  }
+
+  .wrapper .content {
+    padding: 35px;
+    font-size: 15px;
+  }
+
+  .nav_links li a, button {
+    font-size: 16px;
+  }
+
+  .illustration {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    right: 30px;
+  }
+
+  section {
+    padding: 40px;
+  }
+
+  .container2 h1 {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  .container2 h4 {
+    font-size: 20px;
+  }
+
+  .container2 img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .trends {
+    font-size: 25px;
+  }
+
+  .welcome h1 {
+    font-size: 25px;
+    margin-right: 18px;
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav_links li a, button {
+    font-size: 12px;
+  }
+
+  .illustration {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    right: 35px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .container2 h1 {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  .container2 h4 {
+    font-size: 20px;
+  }
+
+  .container2 img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .trends {
+    font-size: 25px;
+  }
+
+  .welcome h1 {
+    font-size: 20px;
+    margin-right: 7px;
+    margin-top: -30px;
+  }
+
+  .wrapper {
+    padding: -10px;
+    display: flex;
+    margin-left: 35px;
+  }
+
+  .wrapper .content a {
+    padding: 10px 30px;
+    font-size: 17px;
+  }
+
+  .wrapper .content {
+    padding: 15px;
+    font-size: 15px;
   }
 }
