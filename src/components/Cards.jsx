@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import sourosh from "./image/sourosh.png";
 
 class Cards extends Component {
     state = {  } 
